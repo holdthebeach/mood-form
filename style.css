@@ -19,3 +19,7 @@ h2{
     font-size: 60px;
     padding: 10px;
 }
+#confirmation{
+    background: yellow;
+    display: none;
+}
