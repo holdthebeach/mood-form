@@ -2,22 +2,28 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/csss" href="style.css">
         <title>Mood Tracker</title>
     </head>
     <body>
-        <h3>Today I am 
-            <select name="mood-menu" class="dropdownMenu">
-            <option>Select Mood</option>
-            <option data-mood="happy">Happy</option>
-            <option data-mood="angry">Angry</option>
-            <option data-mood="excited">Excited</option>
-            </select> because of 
-            <select name="trigger-menu" class="dropdownMenu">
-            <option>Select Mood Trigger</option>
-            <option data-mood="chocolate">Happy</option>
-            <option data-mood="the weather">Angry</option>
-            <option data-mood="my work">Excited</option>
-            </select>
-        </h3>
+        <div id="inputStatement">
+            <h2>Today I am 
+                <select name="mood-menu" class="dropdownMenu">
+                    <option>Select Mood</option>
+                    <option data-mood="happy">Happy</option>
+                    <option data-mood="angry">Angry</option>
+                    <option data-mood="excited">Excited</option>
+                </select> because of 
+                <select name="trigger-menu" class="dropdownMenu">
+                    <option>Select Mood Trigger</option>
+                    <option data-mood="chocolate">Chocolate</option>
+                    <option data-mood="the weather">The Weather</option>
+                    <option data-mood="my work">a Promotion</option>
+                </select>
+            </h2>
+            <button>Record</button>
+        </div>
+        
     </body>
 </html>
