@@ -6,6 +6,9 @@ $(document).ready(function(){
             data: $('form').serialize(),
             success: function(result){
                 this.closest('#inputStatement').find('#confirmation').show();
+            },
+            error: function(){
+                alert('Error');   
             }
         });
     });
