@@ -9,18 +9,21 @@
     <body>
         <div id="inputStatement">
             <h2>Today I am 
-                <select name="mood-menu" class="dropdownMenu">
-                    <option>Select Mood</option>
-                    <option data-mood="happy">Happy</option>
-                    <option data-mood="angry">Angry</option>
-                    <option data-mood="excited">Excited</option>
-                </select> because of 
-                <select name="trigger-menu" class="dropdownMenu">
-                    <option>Select Mood Trigger</option>
-                    <option data-mood="chocolate">Chocolate</option>
-                    <option data-mood="the weather">The Weather</option>
-                    <option data-mood="my work">a Promotion</option>
-                </select>
+                <form action="/record">
+                    <select name="mood-menu" class="dropdownMenu">
+                        <option>Select Mood</option>
+                        <option data-mood="happy">Happy</option>
+                        <option data-mood="angry">Angry</option>
+                        <option data-mood="excited">Excited</option>
+                    </select></form> 
+                because of 
+                <form action="/record">
+                    <select name="trigger-menu" class="dropdownMenu">
+                        <option>Select Mood Trigger</option>
+                        <option data-mood="chocolate">Chocolate</option>
+                        <option data-mood="the weather">The Weather</option>
+                        <option data-mood="my work">a Promotion</option>
+                    </select></form>
             </h2>
             <button>Record</button>
         </div>
