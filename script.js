@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('form').on('submit', function(event){
+    $(document).on('submit', 'form', function(event){
         event.preventDefault();
         $.ajax('/record', {
             type: 'POST',
