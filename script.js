@@ -1,3 +1,4 @@
+//POST request to non-existant page with form submission data
 $(document).ready(function(){
     $('form').on('submit', function(event){
         event.preventDefault();
@@ -8,7 +9,7 @@ $(document).ready(function(){
                 $('#confirmation').show();
             },
             error: function(){
-                alert('Error');
+                alert('Error: Could not post');
             }
         });
     });

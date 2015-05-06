@@ -1,0 +1,1 @@
+An HTML form using jQuery to display my initial idea for project, moodtracker. Displays two drop down menus for mood and trigger selection.
