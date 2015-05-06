@@ -1,14 +1,14 @@
 $(document).ready(function(){
-    $(document).on('submit', 'form', function(event){
+    $('form').on('submit', function(event){
         event.preventDefault();
         $.ajax('/record', {
             type: 'POST',
             data: $('form').serialize(),
-            success: function(result){
-                this.closest('#inputStatement').find('#confirmation').show();
+            success: function(){
+                $('#confirmation').show();
             },
             error: function(){
-                alert('Error');   
+                alert('Error');
             }
         });
     });
